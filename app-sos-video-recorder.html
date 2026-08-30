@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>S.O.S. Video Recorder — приложение личной безопасности</title>
+<meta name="description" content="S.O.S. Video Recorder — приложение для личной безопасности: запись видео и аудио, резервное сохранение на устройство и в облако, передача геолокации доверенному контакту.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f7f2e7;
+    --panel:#fffdf7;
+    --gold:#a9791f;
+    --ink:#2b2620;
+    --muted:#71675a;
+    --line: rgba(169,121,31,0.28);
+    --maxw: 860px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Calibri','Carlito',sans-serif;
+    font-size:1.06rem;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--gold);}
+  .wrap{ max-width:var(--maxw); margin:0 auto; padding:64px 28px 80px; }
+  .eyebrow{
+    text-transform:uppercase;
+    letter-spacing:0.22em;
+    font-size:0.82rem;
+    color:var(--gold);
+    font-weight:700;
+    margin-bottom:14px;
+    display:block;
+  }
+  h1{
+    font-size:clamp(2rem, 5vw, 2.8rem);
+    line-height:1.1;
+    margin:0 0 20px;
+    font-weight:600;
+  }
+  .lead{
+    color:var(--muted);
+    font-size:1.15rem;
+    max-width:62ch;
+    margin-bottom:36px;
+  }
+  h2{
+    font-size:1.28rem;
+    font-weight:600;
+    margin:0 0 18px;
+  }
+  .panel{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:32px 36px;
+    margin-bottom:24px;
+  }
+  ul.features{
+    margin:0;
+    padding:0;
+    list-style:none;
+  }
+  ul.features li{
+    padding:10px 0 10px 28px;
+    position:relative;
+    border-bottom:1px solid var(--line);
+  }
+  ul.features li:last-child{ border-bottom:none; }
+  ul.features li::before{
+    content:"—";
+    position:absolute;
+    left:0;
+    color:var(--gold);
+    font-weight:700;
+  }
+  .contact-box{
+    display:flex;
+    flex-wrap:wrap;
+    gap:24px;
+    color:var(--muted);
+  }
+  .contact-box a{ color:var(--gold); font-weight:600; }
+  footer{
+    text-align:center;
+    color:var(--muted);
+    font-size:0.9rem;
+    margin-top:48px;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="eyebrow">Приложение для Android</span>
+    <h1>S.O.S. Video Recorder</h1>
+    <p class="lead">Приложение для личной безопасности: запись видео и аудио одним
+    нажатием, комбинацией кнопки громкости или виджетом на рабочем столе —
+    в том числе при выключенном экране. Записи сохраняются на устройство и,
+    по желанию, резервируются в облако — приватный Telegram-чат доверенного
+    контакта или собственный Google Drive пользователя.</p>
+
+    <div class="panel">
+      <h2>Возможности</h2>
+      <ul class="features">
+        <li>Мгновенный запуск записи с главного экрана, виджетом рабочего стола или кнопкой громкости (серия нажатий или удержание) — работает и при заблокированном экране</li>
+        <li>Сегментированная запись видео со звуком с настраиваемым качеством и длиной сегмента</li>
+        <li>Таймкод и координаты, вшитые прямо в видео (burned-in оверлей)</li>
+        <li>Автоматическое SMS с геолокацией доверенным контактам при старте записи (по желанию, номера вносятся вручную)</li>
+        <li>Резервное сохранение записей в приватный Telegram-чат доверенного контакта через собственный сервер-посредник — токен бота никогда не хранится на телефоне</li>
+        <li>Резервное сохранение в собственный Google Drive пользователя — доступ ограничен только файлами, которые создало само приложение</li>
+        <li>Встроенный файловый менеджер записей с удалением, защищённым PIN-кодом</li>
+        <li>Работа в фоне устойчива к выключению экрана и агрессивным энергосберегающим режимам производителей</li>
+      </ul>
+    </div>
+
+    <div class="panel contact-box">
+      <div>Политика конфиденциальности:<br><a href="./privacy-sos-video-recorder.html">открыть</a></div>
+      <div>Контакт:<br><a href="mailto:daivachakra@gmail.com">daivachakra@gmail.com</a></div>
+    </div>
+
+    <footer>S.O.S. Video Recorder — приложение личной безопасности</footer>
+  </div>
+</body>
+</html>
