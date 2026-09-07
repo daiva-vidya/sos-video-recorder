@@ -82,6 +82,37 @@
     color:var(--gold);
     font-weight:700;
   }
+  .tag{
+    display:inline-block;
+    font-size:0.78rem;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.04em;
+    color:var(--gold);
+    border:1px solid var(--line);
+    border-radius:3px;
+    padding:1px 7px;
+    margin-left:8px;
+    vertical-align:middle;
+  }
+  .plans{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+  }
+  .plan{
+    flex:1 1 220px;
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:20px 22px;
+    background:var(--bg);
+  }
+  .plan h3{
+    margin:0 0 8px;
+    font-size:1.05rem;
+    font-weight:700;
+  }
+  .plan p{ margin:0; color:var(--muted); font-size:0.96rem; }
   .contact-box{
     display:flex;
     flex-wrap:wrap;
@@ -114,15 +145,37 @@
         <li>Сегментированная запись видео со звуком с настраиваемым качеством и длиной сегмента</li>
         <li>Таймкод и координаты, вшитые прямо в видео (burned-in оверлей)</li>
         <li>Автоматическое SMS с геолокацией доверенным контактам при старте записи (по желанию, номера вносятся вручную)</li>
-        <li>Резервное сохранение записей в приватный Telegram-чат доверенного контакта через собственный сервер-посредник — токен бота никогда не хранится на телефоне</li>
-        <li>Резервное сохранение в собственный Google Drive пользователя — доступ ограничен только файлами, которые создало само приложение</li>
+        <li>Резервное сохранение записей в приватный Telegram-чат доверенного контакта через собственный сервер-посредник — токен бота никогда не хранится на телефоне<span class="tag">по подписке</span></li>
+        <li>Постоянная трансляция геопозиции доверенному контакту, независимо от того, идёт ли запись<span class="tag">по подписке</span></li>
+        <li>Резервное сохранение в собственный Google Drive пользователя — доступ ограничен только файлами, которые создало само приложение<span class="tag">разовая покупка</span></li>
         <li>Встроенный файловый менеджер записей с удалением, защищённым PIN-кодом</li>
         <li>Работа в фоне устойчива к выключению экрана и агрессивным энергосберегающим режимам производителей</li>
       </ul>
     </div>
 
+    <div class="panel">
+      <h2>Платные функции</h2>
+      <div class="plans">
+        <div class="plan">
+          <h3>Доверенная группа</h3>
+          <p>Помесячная подписка с автопродлением. Открывает резервную отправку
+          записей и (опционально) постоянной геопозиции в приватную
+          Telegram-группу доверенного контакта. Цена отображается в Google
+          Play при оформлении и зависит от региона. Отменить можно в любой
+          момент в Google Play → Подписки.</p>
+        </div>
+        <div class="plan">
+          <h3>Доступ к Google Drive</h3>
+          <p>Разовая покупка без повторных списаний. Открывает резервное
+          сохранение записей в собственный Google Drive пользователя.
+          Приложение видит и создаёт только свои собственные файлы.</p>
+        </div>
+      </div>
+    </div>
+
     <div class="panel contact-box">
       <div>Политика конфиденциальности:<br><a href="./privacy-sos-video-recorder.html">открыть</a></div>
+      <div>Условия использования:<br><a href="./terms-sos-video-recorder.html">открыть</a></div>
       <div>Контакт:<br><a href="mailto:daivachakra@gmail.com">daivachakra@gmail.com</a></div>
     </div>
 
